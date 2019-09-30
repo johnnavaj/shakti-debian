@@ -1,0 +1,3 @@
+[submodule "isar"]
+	path = isar
+	url = git@github.com:ilbers/isar.git
