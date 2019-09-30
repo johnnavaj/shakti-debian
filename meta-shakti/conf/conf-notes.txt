@@ -1,0 +1,2 @@
+Common targets are:
+    multiconfig:qemuriscv64-bullseye-ports:isar-image-base

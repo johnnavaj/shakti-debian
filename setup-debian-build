@@ -1,0 +1,5 @@
+#!/bin/sh
+SHAKTIROOT=$(pwd)
+TEMPLATECONF=${SHAKTIROOT}/meta-shakti/conf
+. ./isar/isar-init-build-env $1
+sed -i "s|##SHAKTIROOT##|$SHAKTIROOT|g" ${BUILDDIR}/conf/bblayers.conf
