@@ -83,3 +83,16 @@ Edit /usr/sbin/qemubootstrap and add riscv64 in the list of architectures.
 . ./setup-debian-build ./build
 bitbake multiconfig:qemuriscv64-bullseye-ports:isar-image-base
 ```
+### Booting image using Qemu
+
+The final Debian image will be present in
+
+```
+tmp/deploy/images/qemuriscv64/isar-image-base-debian-bullseye-ports-qemuriscv64.ext4.img
+```
+Test the image by running
+```
+./run_debian_qemu.sh <path to image>
+For ex:
+./run_debian_qemu.sh build/tmp/deploy/images/qemuriscv64/isar-image-base-debian-bullseye-ports-qemuriscv64.ext4.img
+```
