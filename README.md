@@ -26,6 +26,11 @@ sudo apt-get install binfmt-support \
     sudo
 ```
 
+### Cloning the repository
+```
+git clone --recurse-submodules git@github.com:vj-kumar/shakti-debian.git
+```
+
 ### Setup sudo rights
 
 Follow the instructions available [here](https://github.com/ilbers/isar/blob/master/doc/user_manual.md#setup-sudo) to setup sudo rights.
